@@ -82,7 +82,9 @@ h1{
 }
 h3{
     color: #fff;
-    font-size: 50px;
+    font-size: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
 }
 p{
     color: antiquewhite;
