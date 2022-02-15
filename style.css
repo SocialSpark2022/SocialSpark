@@ -7,6 +7,8 @@ html {
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Khand', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
   }
 *{
@@ -14,6 +16,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
 @keyframes flicker {
     
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
@@ -87,13 +90,13 @@ nav{
     background-color: #38ACEC;
     color: #fff;
 }
-.column {
+.column{
     float: left;
     width: 30%;
     margin-bottom: 15px;
     margin-right: 7px;
     margin-left: 7px;
-  }
+}
   
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -108,6 +111,7 @@ nav{
 .about-text{
     text-align: center;
     margin-right: 70px;
+    align-items: center;
 
 }
 .container2{
@@ -143,9 +147,33 @@ nav{
   }
   
 @media screen and (max-width: 650px) {
+    .about-text{
+        align-items: center;
+        text-align: center;
+        padding-left: 70px;
+    }
     .column {
       width: 100%;
       display: block;
+    }
+    .columnf {
+      width: 100%;
+      display: table;
+    }
+    .leftg {
+      width: 10%;
+      display: table;
+    }
+    .rightg {
+      display: none;
+    }
+    .gamingpics{
+        position: absolute;
+    }
+    .gamingtext{
+        margin-top: 75%;
+        margin-bottom: 20px;
+        margin-left: 2px;
     }
     .col-1{
         width: 100%;
@@ -220,30 +248,7 @@ button:hover{
     transform: translateY(-10px);
     filter: grayscale(1);
 }
-/*.usjpics{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-right: 20px;
-    margin-top: 10px;
-    transition: transform 0.5s;
-    margin-bottom: 30px;
-}
-.usjpics img{
-    width: 400px;
-    height: 240px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    filter: grayscale(0);
-    padding: 0px 10px;
-    padding-top: 10px;
-}
-.usjpics img:hover{
-    transform: translateY(-10px);
-    filter: grayscale(1);
-}*/
+
 .top-left {
   position: absolute;
   top: 23px;
@@ -366,6 +371,11 @@ h5{
     font-size: 20px;
     margin-top: 70px;
 }
+p5{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 5px;
+}
 p1{
     color: #fff;
     font-size: 15px;
@@ -374,17 +384,26 @@ p2{
     color: #38ACEC;
     font-size: 15px;
 }
+p3{
+    color: grey;
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+}
 .allnews{
     display: flex;
     margin-top: 30px;
+    margin-bottom: 5px;
+    align-items: center;
 }
-.newspics{
+.musicpics{
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
-.newspics img{
+.musicpics img{
     width: 400px;
     height: 250px;
     border: dashed;
@@ -392,6 +411,38 @@ p2{
     border-radius: 20px;
     cursor: pointer;
     padding: 10px 10px;
+}
+.columnf{
+    float: left;
+    width: 26%;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 30px;
+    border: outset; 4px;
+    border-color: #8fd3f4;
+    border-radius: 10px;
+    position: relative;
+}
+.containerf{
+    padding-bottom: 30px;
+    padding-left: 5px;
+  }
+.financepics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.financepics img{
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    border: double;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-color: #8fd3f4;
+
 }
 .pagenumbers{
     text-align: center;
@@ -421,4 +472,78 @@ pagebutton:disabled,
 pagebutton[disabled]{
     color: #fff;
     background: #38ACEC;
+}
+.gamingnews{
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,3,.7));
+}
+.columng{
+    float: left;
+}
+.leftg{
+    width: 65%;
+}
+.middleg{
+    width: 10%;
+}
+.rightg{
+    width: 20%;
+    margin-right: 5px;
+}
+.gamingpics{
+    display: flex;
+}
+.gamingpics img{
+    width: 300px;
+    height: 190px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.gamingtext a{
+    text-decoration: none;
+}
+pg{
+    font-family: Khand;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+pg:hover{
+    text-decoration: underline #fff;
+}
+
+pc{
+    font-size: 12px;
+    font-family: Roboto;
+    color: lightgrey;
+    bottom: 2px;
+    right: 10px;
+    position: absolute;
+    text-decoration: none;
+}
+.gamenews{
+    position: relative;
+    margin-top: 40px;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,3,.7));
+    margin-right: 10px;
+}
+.gamepics{
+    display: flex;
+    align-items: center;
+}
+.gamepics img{
+    width: 100%;
+    height: 120px;
+    cursor: pointer;
+}
+.gametext a{
+    text-decoration: none;
+}
+.gamepagenumbers{
+    text-align: center;
+    padding-left: 36%;
+
 }
