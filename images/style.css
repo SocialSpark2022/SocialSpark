@@ -45,6 +45,7 @@ body {
     padding-left: 8%;
     box-sizing: border-box;
 }
+
 .logo{
     width: 100px;
 }
@@ -103,6 +104,16 @@ nav{
     margin: 8px;
     background: none;
   }
+.cardag{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    background: none;
+  }
+.cardab{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    background: none;
+  }
   
 .about-section {
     padding: 30px 0;
@@ -147,10 +158,25 @@ nav{
   }
   
 @media screen and (max-width: 650px) {
+    .vertical-line{
+        display: none;
+    }
     .about-text{
         align-items: center;
         text-align: center;
         padding-left: 70px;
+    }
+    .columntiktok{
+        width: 100%;
+        display: block;
+    }
+    .tiktokleft{ 
+        width: 100%;
+        display: table;
+    }
+    .tiktokright{
+        display: table;
+        width: 100%;
     }
     .column {
       width: 100%;
@@ -282,25 +308,43 @@ h2{
     position: relative;
     color: #fff;
     padding: 5px 1px;
+    font-size: 32px;
+}
+h4{
+    position: relative;
+    color: #fff;
+    padding: 5px 1px;
+    font-size: 32px;
 }
 
 h2:after{
     content: '';
     position: absolute;
     align-items: center;
-    height: 5%;
+    height: 2px;
     width: 50px;
     left: 5px;
     bottom: 0;
     border-radius: 2px;
-    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background: linear-gradient(90deg, #FD349C 10%, #38ACEC 100%);
+}
+h4:after{
+    content: '';
+    position: absolute;
+    align-items: center;
+    height: 2px;
+    width: 50px;
+    left: 5px;
+    bottom: 0;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #38ACEC 10%, #1589FF 100%);
 }
 h3{
     position: relative;
     color: #fff;
     padding: 5px 1px;
     font-size: 30px;
-    text-decoration: underline #84fab0;
+    text-decoration: underline lightblue;
 }
 
 h6{
@@ -333,7 +377,7 @@ h6{
 
 .form-control:hover{
     border: 2px solid #fff;
-    background-color: #38ACEC;
+    background: linear-gradient(90deg, #38ACEC 20%, #FD349C 100%);;
 }
 .form-control:focus{
     border: 2px solid #fff;
@@ -369,7 +413,7 @@ h6{
 h5{
     color: #fff;
     font-size: 20px;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 p5{
     color: #fff;
@@ -383,6 +427,12 @@ p1{
 p2{
     color: #38ACEC;
     font-size: 15px;
+    text-decoration: underline solid #38ACEC;
+}
+p2:hover{
+    color: #FD349C;
+    font-size: 15px;
+    text-decoration: underline solid #FD349C;
 }
 p3{
     color: grey;
@@ -404,13 +454,16 @@ p3{
     position: relative;
 }
 .musicpics img{
-    width: 400px;
-    height: 250px;
+    width: 420px;
+    height: 270px;
     border: dashed;
-    border-color: #8fd3f4;
+    border-color: #38ACEC;
     border-radius: 20px;
     cursor: pointer;
     padding: 10px 10px;
+}
+.musicpics img:hover{
+    border-color: #FD349C;
 }
 .columnf{
     float: left;
@@ -492,6 +545,15 @@ pagebutton[disabled]{
     width: 20%;
     margin-right: 5px;
 }
+.columntiktok{
+    float: left;
+}
+.tiktokleft{
+    width: 50%;
+}
+.tiktokright{
+    width: 50%;
+}
 .gamingpics{
     display: flex;
 }
@@ -568,8 +630,15 @@ pm{
     display: block;
 }
 .card:hover{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/1.png);
     border-color:  #38ACEC;
+}
+.cardag:hover{
+    background-image: url(images/3.png);
+    border: solid #FD349C 1px;
+}
+.cardab:hover{
+    background-image: url(images/3.png);
+    border: solid #38ACEC 1px;
 }
 .container3{
     padding: 0 16px;
@@ -582,3 +651,143 @@ pm{
     clear: both;
     display: table;
   }
+#slideshow {
+  overflow: hidden;
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.slide {
+  float: left;
+  height: 490px;
+  width: 800px;
+}
+.slide-wrapper {
+  width: calc(800px * 5);
+  animation: slide 15s ease infinite;
+}
+ 
+@keyframes slide {
+    15% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: calc(-800px * 1);
+  }
+  45% {
+    margin-left: calc(-800px * 2);
+  }
+}
+.slide a img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#slideshow2 {
+  overflow: hidden;
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.slide2 {
+  float: left;
+  height: 490px;
+  width: 800px;
+}
+.slide2-wrapper2 {
+  width: calc(800px * 5);
+  animation: slide2 12s ease infinite;
+}
+ 
+@keyframes slide2{
+  15% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: calc(-800px * 1);
+  }
+  45% {
+    margin-left: calc(-800px * 2);
+  }
+  60% {
+    margin-left: calc(-800px * 3);
+  }
+  75%{
+    margin-left: calc(-800px * 4);
+  }
+ 
+}
+.slide2 a img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+buttonmarvel{
+    width: 200px;
+    height: 60px;
+    color: #000;
+    font-size: 17px;
+    background: #fff;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;          
+    float: left;
+    border: none;
+    border-radius: 7px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+buttonmarvel:hover{
+    color: #fff;
+    background-color: #38ACEC;
+    border-color: #fff;
+}
+buttonmarvel:disabled,
+buttonmarvel[disabled]{
+    color: #fff;
+    background: #38ACEC;
+}
+.columntiktok{
+    float: left;
+}
+.tiktokleft{
+    width: 50%;
+    text-align: center;
+}
+.tiktokright{
+    width: 50%;
+    text-align: center;
+}
+.tiktokvideo{
+    margin-bottom: 20px;
+    text-align: center;
+}
+video{
+    background-color: #000;
+}
+tiktokname{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+tiktokdate{
+    color: grey;
+    font-size: 10px;
+    text-align: center;
+}
+.vertical-line{
+    border-left: 4px solid #000;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    width: 1px;
+}
