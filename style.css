@@ -103,16 +103,19 @@ nav{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
     background: none;
+    margin-right: 10px;
   }
 .cardag{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
     background: none;
+    margin-left: 15px;
   }
 .cardab{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
     background: none;
+    margin-left: 15px;
   }
   
 .about-section {
@@ -162,6 +165,21 @@ nav{
         align-items: center;
         text-align: center;
         padding-left: 70px;
+    }
+    .page{
+        padding-left: 1%;
+    }
+    .columntiktok{
+        width: 100%;
+        display: block;
+    }
+    .tiktokleft{ 
+        width: 100%;
+        display: table;
+    }
+    .tiktokright{
+        display: table;
+        width: 100%;
     }
     .column {
       width: 100%;
@@ -328,6 +346,7 @@ h3{
     position: relative;
     color: #fff;
     padding: 5px 1px;
+    margin: 0 auto;
     font-size: 30px;
     text-decoration: underline lightblue;
 }
@@ -530,6 +549,15 @@ pagebutton[disabled]{
     width: 20%;
     margin-right: 5px;
 }
+.columntiktok{
+    float: left;
+}
+.tiktokleft{
+    width: 50%;
+}
+.tiktokright{
+    width: 50%;
+}
 .gamingpics{
     display: flex;
 }
@@ -731,4 +759,39 @@ buttonmarvel:disabled,
 buttonmarvel[disabled]{
     color: #fff;
     background: #38ACEC;
+}
+.columntiktok{
+    float: left;
+}
+.tiktokleft{
+    width: 50%;
+    text-align: center;
+}
+.tiktokright{
+    width: 50%;
+    text-align: center;
+}
+.tiktokvideo{
+    margin-bottom: 20px;
+    text-align: center;
+}
+video{
+    background-color: #000;
+}
+tiktokname{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+tiktokdate{
+    color: grey;
+    font-size: 10px;
+    text-align: center;
+}
+.vertical-line{
+    border-left: 4px solid #000;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    width: 1px;
 }
