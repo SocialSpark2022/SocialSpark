@@ -766,6 +766,9 @@ pm{
   45% {
     margin-left: calc(-800px * 2);
   }
+  60% {
+    margin-left: calc(-800px * 3);
+  }
 }
 .slide a img{
     width: 100%;
