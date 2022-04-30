@@ -15,8 +15,8 @@ body {
 }
 .page{ 
     width: 100%;
-    min-height: 250vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images3/4.png);
+    min-height: 220vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images4/img-3.png);
     background-position: center;
     background-size: cover;
     padding-left: 8%;
@@ -101,6 +101,7 @@ button:hover{
     display: block;
     border: solid 2px #000;
     border-radius: 10px;
+    transition: transform .2s;
 }
 .column2{
     float: left;
@@ -375,5 +376,9 @@ button1[disabled]{
     padding: 10px 10px;
 }
 .musicpics img:hover{
-    border-color: #7D0541;
+    border-color: blue;
+}
+
+.localpics:hover {
+  transform: scale(1.1);
 }

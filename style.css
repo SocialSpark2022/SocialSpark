@@ -187,6 +187,12 @@ nav{
     background: none;
     margin-right: 10px;
   }
+.cardbasket{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    background: none;
+    margin-right: 10px;
+ }
 .cardag{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
@@ -269,18 +275,6 @@ nav{
         width: 100%;
         display: table;
         margin-right: 0;
-    }
-    .columntiktok{
-        width: 100%;
-        display: block;
-    }
-    .tiktokleft{ 
-        width: 100%;
-        display: table;
-    }
-    .tiktokright{
-        display: table;
-        width: 100%;
     }
     .column {
       width: 100%;
@@ -652,15 +646,6 @@ pagebutton[disabled]{
     width: 20%;
     margin-right: 5px;
 }
-.columntiktok{
-    float: left;
-}
-.tiktokleft{
-    width: 50%;
-}
-.tiktokright{
-    width: 50%;
-}
 .gamingpics{
     display: flex;
 }
@@ -856,34 +841,7 @@ buttonmarvel[disabled]{
     color: #fff;
     background: #38ACEC;
 }
-.columntiktok{
-    float: left;
-}
-.tiktokleft{
-    width: 50%;
-    text-align: center;
-}
-.tiktokright{
-    width: 50%;
-    text-align: center;
-}
-.tiktokvideo{
-    margin-bottom: 20px;
-    text-align: center;
-}
-video{
-    background-color: #000;
-}
-tiktokname{
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-}
-tiktokdate{
-    color: grey;
-    font-size: 10px;
-    text-align: center;
-}
+
 .vertical-line{
     border-left: 4px solid #000;
     display: block;
@@ -897,7 +855,6 @@ tiktokdate{
     height: 600px;
     display: flex;
     justify-content: center;
-   
 }
 
 .slider{
@@ -905,7 +862,6 @@ tiktokdate{
     height: fit-content;
     width: 97%;
     overflow: hidden;
-
 }
 
 .slides{
@@ -1225,6 +1181,18 @@ tiktokdate{
 .part a{
     text-decoration: none;
 }
+.partg{
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: solid #fff 2px;
+    border-radius: 30px;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,3,.7));
+    text-align: center;
+    margin-top: 20px;
+}
+.partg a{
+    text-decoration: none;
+}
 .titlel{
     border: solid #fff 1px;
     border-radius: 30px;
@@ -1238,6 +1206,9 @@ tiktokdate{
     text-align: center;
     padding-bottom: 15px;
 }
+.latestnewsg{
+    display: block;
+}
 .latestpics{
     align-items: center;
 }
@@ -1250,4 +1221,282 @@ tiktokdate{
 .latesttext a{
     text-decoration: none;
 
+}
+.winners{
+    margin-top: 5%;
+    margin-left: 5%;
+    color: #000;
+}
+
+.winners h1{
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: 500;
+}
+h7{
+    color: #000;
+}
+.weather{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-right: 30px;
+}
+.weather li{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+    padding-right: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.weather li img{
+    width: 280px;
+    border-radius: 12px;
+    height: 150px;
+}
+.weather h2:after{
+    width: 70%;
+    left: 15%;
+    background: linear-gradient(90deg, #0000CD  10%, #38ACEC 50%, #FFF 100%);
+
+}
+.gamingnews1{
+    display: block;
+    text-decoration: none;
+}
+.gamingnews1 li{
+    display: flex;
+    position: relative;
+    list-style: none;
+    margin-right: 5px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,3,.7))
+}
+.gamingnews1 li img{
+    width: 300px;
+    height: 190px;
+    cursor: pointer;
+    margin-right: 5px;
+
+}
+.gamingnews1 pg{
+    margin-left: 5px;
+    text-decoration: none;
+}
+.gamenews1{
+    position: relative;
+    margin-right: 10px;
+}
+.gamenews1 pg{
+    font-size: 20px;
+    text-decoration: none;
+}
+.gamenews1 li{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,3,.7));
+
+}
+.gamenews1 li img{
+    width: 100%;
+    height: 130px;
+    cursor: pointer;
+}
+.date-text{
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-right: 30px;
+    font-family: Patrick Hand;
+    color: #fff;
+}
+.movies10{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-right: 30px;
+}
+.movies10 li{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+    margin-top: 20px;
+    padding-right: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,3,.7));
+}
+.movies10 li img{
+    margin: 4px;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 280px;
+    border-radius: 12px;
+    height: 370px;
+}
+.movies10 h2:after{
+    width: 70%;
+    left: 15%;
+    background: linear-gradient(90deg, #000  10%, #fff 50%, #000 90%);
+}
+.movies10 h2{
+    align-items: center;
+    text-align: center;
+}
+.movies10 li:hover pm{
+    display: block;
+}
+
+.finance li img{
+    width: 96%;
+    height: 200px;
+    border: double;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-color: #8fd3f4;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+
+}
+.finance li{
+    display: block;
+    float: left;
+    width: 26%;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 30px;
+    border: outset; 4px;
+    border-color: #8fd3f4;
+    border-radius: 10px;
+    position: relative;
+
+}
+.finance{
+    display: block;
+    float: left;
+    width: 100%;
+    align-items: center;
+}
+.finance h2:after{
+    width: 30%;
+    background: linear-gradient(90deg, #0000CD  10%, #38ACEC 50%, #FFF 100%);
+}
+
+.finance1 li{
+    display: block;
+    float: left;
+    width: 26%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 30px;
+    border: outset; 4px;
+    border-color: #8fd3f4;
+    border-radius: 10px;
+    position: relative;
+
+}
+.finance1{
+    display: block;
+    float: left;
+    width: 100%;
+    align-items: center;
+}
+.finance1 h2:after{
+    width: 50%;
+    left: 25%;
+    background: linear-gradient(90deg, #0000CD  10%, #38ACEC 50%, #FFF 100%);
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+.styled-table thead tr {
+    background-color: #151B54;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: thin solid #dddddd;
+    color: #fff;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    color: #151B54;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #151B54;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #151B54;
+}
+.date li{
+    text-decoration: none;
+    list-style: none;
+} 
+
+.finance2 li{
+    display: block;
+    float: left;
+    width: 27%;
+    height: 210px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+    border: outset; 4px;
+    border-color: #8fd3f4;
+    border-radius: 10px;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+
+}
+.finance2{
+    margin-top: 30px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.finance2 p5{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.finance2 a{
+    text-decoration: none;
+    list-style: none;
 }
