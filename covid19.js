@@ -9,6 +9,7 @@ const options = {
 fetch('https://covid-193.p.rapidapi.com/statistics', options)
 	.then(response => response.json())
 	.then(response => {
+		console.log(response)
 		const r = response["response"]
 		for (i in r){
 			const c = r[i]["country"];
