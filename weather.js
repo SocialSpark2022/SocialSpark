@@ -16,7 +16,7 @@ for (item of list) {
         const des1 = des.charAt(0).toUpperCase() + des.slice(1); 
         const m = data["main"]
         const temperature = m["temp"]
-        const result = `<li><img src="countries/${n}.png" alt="${n}"><h2>${n}</h2><p>Description: ${des1}</p>
+        const result = `<li><img src="Countries/${n}.png" alt="${n}"><h2>${n}</h2><p>Description: ${des1}</p>
                         <p>Weather: ${ma}</p><p>Temperature: ${(temperature-273.15).toFixed(2)} °C</p></li>`
         document.querySelector('.weather').innerHTML += result;
     }
